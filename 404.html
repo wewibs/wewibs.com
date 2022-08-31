@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="htmlbody">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,19 +7,7 @@
 	</head>
 	<body>
 		<script>
-			var doc = document.getElementById('htmlbody')
-			xhttp = new XMLHttpRequest()
-			xhttp.onreadystatechange = function () {
-				if (this.readyState == 4) {
-					if (this.status == 200) {
-						doc.innerHTML = this.responseText
-						doc.removeAttribute('id')
-					}
-					if (this.status == 404) doc.innerHTML = 'Page not found.'
-				}
-			}
-			xhttp.open('GET', 'index.html', true)
-			xhttp.send()
-		</script>
+            window.location.href = "/";
+        </script>
 	</body>
 </html>
